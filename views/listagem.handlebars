@@ -1,0 +1,18 @@
+<div class="text-center fs-6">
+<h1>Gestão Administrativa</h1>
+</div>
+<table class="table table-bordered table-striped">
+
+  <tr>
+    <td>Login de Usuario</td>
+    <td>Opcoes</td>
+  </tr>
+
+    {{#data}}
+  <tr>
+    <td>{{login}}</td>
+    <td><a href="/deletar/{{login}}" class="btn btn-danger">X</a><a href="/alterar/{{login}}" class="btn btn-primary">Mudar Senha</a></td>
+  </tr>
+  {{/data}}
+
+</table>

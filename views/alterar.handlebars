@@ -1,0 +1,15 @@
+<div class="wrapper">
+<form name="fomm1" method="post" action="update" class="p-3 mt-3">
+  {{#data}}
+  <div class="text-center mt-4 name">
+  Login: {{login}} <br>
+  </div>
+  <input type="hidden" id="login" name="login" value="{{login}}">
+  {{/data}}
+  <div class="form-field d-flex align-items-center">
+  <span class="fas fa-key"></span>
+  <input type="password" id="novasenha" name="novasenha" placeholder="Nova Senha">
+</div>
+  <input type="submit" name="mudar" id="mudar" value="Mudar Senha" class="btn mt-3">
+</form>
+</div>
